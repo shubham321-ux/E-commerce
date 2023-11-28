@@ -1,0 +1,180 @@
+*{
+    width:100%;
+    height:100%;
+}
+html,body{
+    margin:0;
+    padding: 0;
+}
+.cartitems{
+    width:100%;
+    min-height: calc(100vh - 60px);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+    overflow: scroll;
+}
+.cartitemdetail{
+    width:50vw;
+    height: 130px;
+    background-color: transparent;
+    display: flex;
+    gap:2px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    margin-top: 8px;
+    
+
+}
+.imgsection{
+    width:100px;
+    height: 100px;
+
+}
+.imgsection img{
+    object-fit: cover;
+    background-color: coral;
+}
+.detailsection{
+    width:10vw;
+    height: 17vh;
+    background-color:transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.buttons{
+    width: 150px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.red{
+    width:5vw;
+    height:5vh;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.red2{
+    width:6vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(27, 221, 27);
+    color: white;
+    cursor: pointer;
+   
+}
+.red3{
+    width:6vw;
+    height:5vh;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(235, 76, 76);
+    color: white;
+    cursor: pointer;
+}
+
+.length0{
+    width:400px;
+    height: 200px;
+    background-color: transparent;
+    text-align: center;
+}
+.length0 .headingcart{
+    height: 50px;
+    background-color: transparent;
+}
+.length0 .continou{
+    width:100px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.length0 .continou:hover{
+    color: black;
+    background-color: rgb(181, 219, 111);
+}
+.clear{
+    width:100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:30px;
+    
+}
+
+.clear .remove{
+       width:100px;
+       height:40px;
+       border:none;
+       border-radius: 5px;
+       background-color: rgb(209, 32, 32);
+       cursor: pointer;
+
+}
+.clear .remove:hover{
+    background-color: black;
+    color:white;
+}
+.clear .check{
+    width:100px;
+    height:40px;
+    border:none;
+    border-radius: 5px;
+    background-color: orange;
+    cursor: pointer;
+}
+.clear .check:hover{
+    background-color: black;
+    color: white;
+}
+.clear   a{
+    width: 100px;
+    height:40px;
+}
+
+@media only screen and (max-width: 768px){
+    .cartitem{
+        width:100%;
+        padding: 0 10px 0 10px;
+    }
+    .cartitemdetail{
+        width:100%;
+        height: 160px;
+        flex-wrap:wrap;
+        background-color: transparent;
+        
+    }
+    .red{
+        width:15vw;
+    }
+    .red2{
+        width:17vw;
+    }
+    .red3{
+        width:17vw;
+    }
+    .detailsection{
+        position: relative;
+        top: -20px;
+        left:10px;
+    }
+    
+}

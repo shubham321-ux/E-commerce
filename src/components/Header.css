@@ -1,0 +1,150 @@
+*{
+    width:100%;
+    height:100%;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headermain{
+    width: 100%;
+    height: 70px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+
+
+.headermain h1{
+    margin-top: 40px;
+    margin-left: 20px;
+    color:rgb(13, 82, 82);
+    text-shadow: 2px -2px 5px;
+}
+.headermain .items{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    margin-right: 70px;
+    gap:20px;
+    background-color: transparent;
+}
+.headermain a{
+    text-decoration: none;
+    height:10px ;
+  
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top:26%;
+    
+}
+.headermain .items a:hover{
+        scale: 1.1;
+}
+
+
+.headermain .signinbtn{
+    width:120px;
+    height: 35px;
+    border-radius:5px ;
+    border: none;
+    margin-right: 20px;
+    position: relative;
+    top:-30px;
+}
+.headermain .signinbtn:hover{
+    background-color: aqua;
+    scale: 1;
+}
+.headermain .cart{
+    cursor: pointer;
+    width:35px;
+    height: 35px;
+    margin-right:0;
+    position: relative;
+    right:-100px;
+    top:-30px;
+}
+.headermain .cart:hover{
+    scale:1.1;
+}
+.menu{
+    width:50px;
+    height:50px;
+    visibility: hidden;
+}
+
+ ul{
+    display:none;
+    position:absolute;
+    right: 0;
+    top:7%;
+    width:300px;
+    height:600px;
+    background-color: rgba(12, 43, 76, 0.8);
+    border-radius: 5px;
+    animation:shubh 1s;
+
+    
+}
+@keyframes shubh {
+    from{
+        right:-50%;
+    }
+    to{
+        right:0;
+    }
+}
+.open{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.reddot{
+    position:absolute;
+    width: 21px;
+    height: 23px;
+    border-radius: 50%;
+    text-align:center;
+    top:2vh;
+    right:17.2vw;
+    background-color: red;
+  }
+@media only screen and (max-width: 768px){
+    .headermain .items{
+        display: none;
+    }
+    .headermain .signinbtn{
+        width:100px;
+    }
+    .headermain .cart{
+        
+        position: absolute;
+         right:25px;
+         top:-13px;
+
+       
+    }
+    .menu{
+        visibility: visible;
+    }
+    .headermain a{
+        top:1%;
+        gap:5px;
+        font-size: 30px;
+        color: white;
+        margin-left: 20px;
+    }
+    .reddot{
+        top:1vh;
+    }
+    
+
+}

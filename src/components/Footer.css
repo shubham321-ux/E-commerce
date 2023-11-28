@@ -1,0 +1,127 @@
+*{
+    width:100%;
+    height:100%;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footermain{
+    width:100%;
+   height:300px;
+    background-color: rgb(28, 29, 29);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.detail{
+    width: 100%;
+    height: 220px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:20px;
+    
+}
+.detail a{
+    text-decoration: none;
+    color: white;
+}
+.shop{
+    width:500px;
+    height:200px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    color: white;
+    position: relative;
+    left:20px;
+    
+   
+}
+.help{
+    width:500px;
+    height:200px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    color: white;
+    
+}
+.about{
+    width:500px;
+    height:200px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    color: white;
+    
+}
+.signin{
+    width:600px;
+    height:200px;
+    background-color:transparent;
+    text-align: center;
+    color:rgb(95, 211, 95);
+    display: flex;
+    flex-direction: column;
+    gap:0;
+   
+    
+}
+.signin input{
+    width:180px;
+    height:55px;
+    position: relative;
+    top:-45%;
+    border-radius:10px;
+    border: none;
+}
+.signin .footerbtn{
+    width:140px;
+    height:55px;
+    position: relative;
+    top:-58%;
+    left:55%;
+    border-radius: 10px;
+    background-color: rgb(207, 191, 42);
+    border:none;
+
+}
+@media only screen and (max-width: 768px){
+    .footermain{
+    min-height:100vh;
+    overflow-x: hidden;
+    }
+    .footermain h3{
+        font-size:5.5vw;
+    }
+    .detail{
+        flex-direction: column;
+    }
+    .shop{
+      text-align: center;
+      left:0;
+    }
+    .help{
+        text-align: center
+    }
+    .about{
+        text-align: center
+    }
+    .signin{
+        text-align: center;
+        
+    }
+    .signin input{
+        left:20%;
+        top:-42%;
+    }
+
+}

@@ -1,0 +1,71 @@
+*{
+    width:100%;
+    height:100%;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    width:100%;
+    height:70vh;
+    background-color: transparent;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.under{
+    width:50vw;
+    height:300px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: -1px -1px 15px  cadetblue;
+}
+form{
+    text-align: center;
+}
+input{
+    width:35vw;
+    height:5vh;
+    background-color: cadetblue;
+    border: none;
+    border-radius:10px;
+    text-align: center;
+    color: white;
+}
+input::placeholder{
+    text-align: center;
+
+}
+.signinbutton{
+    width:100px;
+    height:35px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color:white;
+}
+.signinbutton:hover{
+    background-color: aqua;
+    color:black;
+}
+
+under a{
+    text-decoration: none;
+    color:rgb(47, 47, 233);
+}
+@media only screen and (max-width: 768px){
+    input{
+        width:50vw;
+        height:4vh;
+    }
+    .under{
+        width:300px;
+        height:300px;
+}
+}
