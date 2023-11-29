@@ -66,7 +66,7 @@ const Signin=({data,setdata,name,setname,gmail,setgmail,date,setdate,password,se
         <input type="date" value={date} onChange={getdate} /><br/>
         <lable>create your password</lable><br/>
         <input type="password" value={password} onChange={getpassword} placeholder="Create Password" required/><br/><br/>
-        <button className="signinbutton">submit</button><br/><br/>
+        <button className="signinbutton">submit</button><br/>
         <p>Already have Account <Link to="/Login">Login</Link></p>
     </form>
     </div>

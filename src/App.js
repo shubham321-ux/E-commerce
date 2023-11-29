@@ -14,6 +14,7 @@ import Category from "./components/Category.js"
 import Women from "./components/Womwn.js"
 import { kidsdata } from "./components/Kidsdata.js"
 import Kids from "./components/Kids.js"
+import Contact from "./components/Contact.js"
 const App=()=>{
   const [data,setdata]=useState([...items]);
   const [cartt,setcartt]=useState([]);
@@ -36,6 +37,7 @@ const App=()=>{
   <Route path="/Category" element={<Category  cartt={cartt}/>}/>
   <Route path="/Womwn" element={<Women cartt={cartt} setcartt={setcartt} items={women} data={datta} setdata={setdatta} />}/>
   <Route path="/Kids" element={<Kids cartt={cartt} setcartt={setcartt} items={kid} data={datta} setdata={setdatta} />}/>
+  <Route path="/Contact" element={<Contact cartt={cartt}/>}/>
  </Routes>
  </>
  

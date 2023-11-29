@@ -1,6 +1,22 @@
+import { useState } from "react"
 import "./Footer.css"
 import { Link } from "react-router-dom"
 const Footer=()=>{
+    const[subdata,setsubdata]=useState("")
+    const[dat,setdat]=useState([])
+
+
+    const sub=(f)=>{
+        setsubdata(f.target.value)
+    }
+    const getsubdata=(even)=>{
+        even.preventDefault()
+        setdat([...dat,{subdata}])
+       
+        setsubdata(" ")
+        alert("Thnku for Subscribe 🙏")
+        
+    }
     return<>
     <div className="footermain">
         <div className="detail">
@@ -26,7 +42,8 @@ const Footer=()=>{
             </div>
             <div className="signin">
                 <h4>Sign up to get 10% off your first order</h4>
-                <input type="gmail" placeholder="enter gmail"/> <button className="footerbtn">Subscribe</button>
+                <input type="gmail" value={subdata} placeholder="enter gmail" onChange={sub}/>
+                 <button onClick={getsubdata} className="footerbtn">Subscribe</button>
             </div>
         </div>
     </div>
