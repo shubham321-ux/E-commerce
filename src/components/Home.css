@@ -22,6 +22,7 @@ html,body{
     display: flex;
     flex-direction: column;
     gap:0;
+   
 
 }
 .main .maincontent .heading{
@@ -38,6 +39,7 @@ html,body{
     border-radius: 15px;
     color: white;
     background-color: black;
+    border:none
 }
 .maincontent .btn:hover{
     scale:1.1;
@@ -59,19 +61,29 @@ html,body{
   @media only screen and (max-width: 768px){
     .main{
         flex-direction: column;
-        gap:10px;
+
+        height: 100vh;
     }
     .main .maincontent{
-        width:70vw;
+        width:80vw;
+        height:52vh;
+        margin-top:3vh;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+       
        
     }
     .main .maincontent .heading{
         font-size: 10vw;
     }
     .maincontent button{
-        margin-left:15vw;
+        margin-left:22vw;
     }
     .mainimage{
         width:100vw;
+        height: 40vh;
+        background-color:transparent;
+        margin-bottom: 7vh;
     }
   }

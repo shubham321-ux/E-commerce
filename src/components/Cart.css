@@ -176,5 +176,10 @@ html,body{
         top: -20px;
         left:10px;
     }
-    
+    .buttons{
+        gap:30px;
+    }
+    .clear{
+        gap:45px;
+    }
 }

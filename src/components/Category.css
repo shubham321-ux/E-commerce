@@ -8,7 +8,7 @@ html,body{
 }
 .category{
     width:100%;
-    height:calc(100vh - 60px);
+    height:120vh;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -56,14 +56,35 @@ html,body{
 }
 @media only screen and (max-width: 768px){
     .category{
-        min-height:150vh;
+        min-height:180vh;
+        background-color:transparent;
     }
 
        .three{
         flex-direction: column;
         background-color: transparent;
         align-items:center;
-        justify-content: space-evenly;
-        gap:100px;
+        justify-content:center;
+        gap:150px;
+        height:130vh;
+        background-color:transparent;
        }
+       .men{
+        width: 60vw;
+        height: 30vh;
+
+       }
+    .women{
+        width: 60vw;
+        height: 30vh;
+        margin-top: 10vh;
+
+       }
+       .kids{
+        width: 60vw;
+        height: 30vh;
+        margin-top: 10vh;
+
+       }
+       
 }

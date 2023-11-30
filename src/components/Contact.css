@@ -9,7 +9,7 @@ html,body{
 }
 .blog{
     width: 100%;
-   min-height:120vh;
+   height:150vh;
     background-color:transparent;
    
 }
@@ -19,13 +19,17 @@ html,body{
     height: 20px;
     margin-left: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-
-   
+    display: flex;  
 }
 .blog3{
     margin-left: 5px;
     font-size: 18px;
-   
-   
+}
+@media only screen and (max-width: 768px){
+    .blog2{
+        width: 100%;
+    }
+    .blog{
+        min-height:290vh;
+    }
 }
